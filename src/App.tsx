@@ -1,22 +1,18 @@
-import { useState } from 'react'
-import './App.css'
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Home from "./pages/Home";
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  const boop: number = 1;
-  console.log(boop);
-
+export default function App() {
   return (
-    <>
-      <div className="card">
-        <p>State is so fun</p>
-        <button onClick={() => setCount((count) => count + 1)}>
-          Count is {count}
-        </button>
-      </div>
-    </>
-  )
-}
+    <Routes>
+      <Route path="/" index element={<Home />} />
 
-export default App;
+      <Route
+        path="*"
+        element={
+          <p className="text-9xl text-green-700 text-center">NOT FOUND</p>
+        }
+      />
+    </Routes>
+  );
+}
