@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Home() {
+function Home() {
   const [count, setCount] = useState(0);
 
   return (
@@ -16,3 +16,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;
