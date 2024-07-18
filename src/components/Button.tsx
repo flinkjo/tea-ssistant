@@ -1,18 +1,21 @@
-interface ButtonProps {
+interface Props{
   text: string;
-  type: "button" | "submit" | "reset";
+  type: HTMLButtonElement["type"];
   onClick: () => void;
   isDisabled: boolean;
   name: string;
 }
 
-function Button(props: ButtonProps) {
-  const { text, type, onClick, isDisabled, name } = props;
-
+function Button({
+  text,
+  type = "button",
+  onClick,
+  isDisabled,
+  name,
+}: Props) {
   return (
     <button
       name={name}
-      // eslint-disable-next-line react/button-has-type
       type={type}
       onClick={onClick}
       disabled={isDisabled}

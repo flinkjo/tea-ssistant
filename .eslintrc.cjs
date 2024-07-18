@@ -21,5 +21,6 @@ module.exports = {
     ],
     "react/react-in-jsx-scope": "off",
     "prettier/prettier": "warn",
+    "react/require-default-props": "off",
   },
 };
