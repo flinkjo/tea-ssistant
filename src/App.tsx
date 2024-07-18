@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
 import Home from "./pages/Home";
 import Layout from "./components/Layout";
 
@@ -12,7 +11,7 @@ export default function App() {
 
       <Route
         path="*"
-        element={<p className="text-9xl text-red-700 text-center">Not Found</p>}
+        element={<p className="text-9xl text-red-700 text-center font-cuteThicc">Not Found</p>}
       />
     </Routes>
   );
