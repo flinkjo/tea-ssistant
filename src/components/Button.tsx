@@ -9,7 +9,7 @@ interface Props {
   name: string;
 }
 
-function Button({ text, type = "button", onClick, isDisabled, name }: Props) {
+export default function Button({ text, type = "button", onClick, isDisabled, name }: Props) {
   return (
     <button
       name={name}
@@ -24,5 +24,3 @@ function Button({ text, type = "button", onClick, isDisabled, name }: Props) {
     </button>
   );
 }
-
-export default Button;

@@ -11,7 +11,11 @@ export default function App() {
 
       <Route
         path="*"
-        element={<p className="text-9xl text-red-700 text-center font-cuteThicc">Not Found</p>}
+        element={
+          <p className="text-9xl text-red-400 text-center font-rainyhearts">
+            Not Found
+          </p>
+        }
       />
     </Routes>
   );

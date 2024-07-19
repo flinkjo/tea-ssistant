@@ -4,7 +4,7 @@ const now = Date.now();
 const fourMinutes = 4 * 60 * 1000;
 const deadline = new Date(now + fourMinutes);
 
-function Timer() {
+export default function Timer() {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
@@ -32,5 +32,3 @@ function Timer() {
     </div>
   );
 }
-
-export default Timer;

@@ -1,7 +1,7 @@
 import Button from "../components/Button";
 import Timer from "../components/Timer";
 
-function Home() {
+export default function Home() {
   return (
     <div className="card">
       <p>Font names?</p>
@@ -19,5 +19,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;
